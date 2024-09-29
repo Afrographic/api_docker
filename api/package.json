@@ -1,0 +1,19 @@
+{
+  "name": "net-ninja-course",
+  "version": "1.0.0",
+  "description": "learning docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon index.js"
+  },
+  "keywords": [
+    "docker"
+  ],
+  "author": "Afrographix",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0"
+  }
+}

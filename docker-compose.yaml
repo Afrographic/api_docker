@@ -1,0 +1,18 @@
+services:
+  api:
+    build: ./api
+    container_name: api_c
+    ports:
+      - '4000:4000'
+    volumes:
+      - ./api:/app
+      - /app/node_modules
+  react_app:
+    build: ./docker-react
+    container_name: react_c
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./docker-react:/app
+      - /app/node_modules
+
